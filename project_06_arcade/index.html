@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <!-- This gets us our fun 8-bit font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+    <!-- loads our own CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <div class="game_settings_btns">
+      <div class="num_players" id="players">
+        <lable>Players:</lable>
+        <select id="player_mode">
+          <option value="0">Pick</option>
+          <option value="1">1 Player</option>
+          <option value="2">2 Player</option>
+        </select>
+      </div>
+      <div class="game_mode" id="mode_lable"> 
+        <lable>Difficulty:</lable>
+        <select id="difficulty">
+          <option value="0">Pick</option>
+          <option value="1">Easy</option>
+          <option value="2">Regular</option>
+          <option value="3">Hard</option>
+        </select>
+      </div>
+    </div>
+    <div class="set_players" id="player_tokens">
+      <div>
+        <lable>Player 1:</lable>
+        <select id="player1_token">
+          <option value="0"></option>
+          <option value="1">X</option>
+          <option value="2">O</option>
+        </select>
+      </div>
+      <div class="player2_token">
+        <lable>Player 2:</lable>
+        <p id="two_token"></p>
+        <!-- <select id="player2_token">
+          <option value="0">O</option>
+          <option value="1">X</o
+        </select> -->
+      </div>
+    </div>
+    <table class="board" id="ticTacToe_board">
+      <tr id="row_0">
+        <td data-cell></td>
+        <td data-cell></td>
+        <td data-cell></td>
+      </tr>
+      <tr id="row_1">
+        <td data-cell></td>
+        <td data-cell></td>
+        <td data-cell></td>
+      </tr>
+      <tr id="row_2">
+        <td data-cell></td>
+        <td data-cell></td>
+        <td data-cell></td>
+      </tr>
+    </table>
+    <div>
+      <h1 class="winner" id="display_winner"></h1>
+    </div>
+    <button onclick="ticTacToe.newGame()" id="new_game" name="New Game">New Game</button><br>
+    <button onclick="ticTacToe.resetBoard()" id="board_reset" name="Reset Game">Reset Game</button>
+    <table class="win_lose">
+      <tr> 
+        <th id="score1_lable">Player</th>
+        <th id="score2_lable">Computer</th>
+      </tr>
+      <tr>
+        <td id="score_1">0</td>
+        <td id="score_2">0</td>
+      </tr>
+    </table>
+  </body>
+  <!-- loads our JavaScript file -->
+  <script type="text/javascript" src="app.js"></script>
+</html>

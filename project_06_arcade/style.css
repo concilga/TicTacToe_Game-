@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  html {
+    background-color: #73d2de;
+    color: white;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body h1 {
+    color: #ff4500;
+    text-shadow: white 2px 2px;
+  }
+
+  .board {
+    display: table;
+    background-color: white;
+    margin: 20px 0;
+  }
+  
+  .board td {
+    background-color: #73d2de;
+    color: #ff4500;
+    text-shadow: orange 2px 2px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    font-size: 5rem; 
+  }
+
+  .win_lose {
+    margin-top: 20px;
+  }
+
+  .win_lose tr {
+    color: white;
+    text-shadow: orange 2px 2px;
+    /* text-shadow: #ff4500 2px 2px; */
+  }
+
+  .win_lose td {
+    background-color: #73d2de;
+    color: #ff4500;
+    text-shadow: orange 2px 2px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    font-size: 5rem; 
+  }
+
+  .game_settings_btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: orange 2px 2px;
+
+  }
+
+  .num_players {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .game_mode {
+    display: none;
+  }
+
+  .set_players {
+    display: none; 
+    align-items: center;
+    text-shadow: orange 2px 2px;
+  }
+
+  #player1_token {
+    margin-right: 20px;
+    height: 20px;
+  }
+
+  .player2_token {
+    display: flex;
+    align-items: center;
+    text-shadow: orange 2px 2px;
+  }
+
+  .player2_token p{
+    color: black;
+    text-shadow: white 1px 1px;
+    margin-left: 10px;
+  }
